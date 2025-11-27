@@ -1,0 +1,254 @@
+{
+  "app": {
+    "name": "Portfolio Analyzer",
+    "version": "1.0.0"
+  },
+  "window": {
+    "width": 1200,
+    "height": 700,
+    "last_tab_index": 0
+  },
+  "analysis": {
+    "default_risk_free_rate": 0.0,
+    "default_span": "日次",
+    "default_period_days": 365,
+    "min_data_points": {
+      "日次": 30,
+      "週次": 20,
+      "月次": 12,
+      "年次": 3
+    },
+    "min_coverage_ratio": 0.7,
+    "time_conversion_factors": {
+      "business_days_per_year": 252,
+      "calendar_days_per_year": 365,
+      "weeks_per_year": 52,
+      "months_per_year": 12,
+      "span_factors": {
+        "日次": "calendar_days_per_year",
+        "週次": "weeks_per_year",
+        "月次": "months_per_year",
+        "年次": 1
+      }
+    },
+    "widget_sizes": {
+      "price_series": {"min_height": 600, "preferred_height": 650, "min_width": 800, "preferred_width": 900},
+      "return_risk_analysis": {"min_height": 800, "preferred_height": 850, "min_width": 700, "preferred_width": 800},
+      "correlation_matrix": {"min_height": 600, "preferred_height": 650, "min_width": 600, "preferred_width": 700},
+      "efficient_frontier": {"min_height": 600, "preferred_height": 700, "min_width": 800, "preferred_width": 900},
+      "security_market_line": {"min_height": 500, "preferred_height": 600, "min_width": 700, "preferred_width": 800}
+    },
+    "time_conversion": {
+      "日次": {
+        "to_weekly": 7,
+        "to_monthly": 30,
+        "to_yearly": 365
+      },
+      "週次": {
+        "to_daily": 0.142857,
+        "to_monthly": 4,
+        "to_yearly": 52
+      },
+      "月次": {
+        "to_daily": 0.033333,
+        "to_weekly": 0.25,
+        "to_yearly": 12
+      },
+      "年次": {
+        "to_daily": 0.002740,
+        "to_weekly": 0.019231,
+        "to_monthly": 0.083333
+      }
+    },
+    "risk_conversion": {
+      "日次": {
+        "to_weekly": 2.645751,
+        "to_monthly": 5.477226,
+        "to_yearly": 19.104973
+      },
+      "週次": {
+        "to_daily": 0.377964,
+        "to_monthly": 2.0,
+        "to_yearly": 7.211103
+      },
+      "月次": {
+        "to_daily": 0.182574,
+        "to_weekly": 0.5,
+        "to_yearly": 3.464102
+      },
+      "年次": {
+        "to_daily": 0.052315,
+        "to_weekly": 0.138675,
+        "to_monthly": 0.288675
+      }
+    }
+  },
+  "ui": {
+    "colors": {
+      "primary": "#0078d4",
+      "primary_hover": "#106ebe",
+      "secondary": "#28a745",
+      "secondary_hover": "#218838",
+      "danger": "#dc3545",
+      "danger_hover": "#c82333",
+      "background": "#2b2b2b",
+      "surface": "#3c3c3c",
+      "border": "#555555",
+      "text_primary": "#ffffff",
+      "text_secondary": "#aaaaaa",
+      "text_accent": "#0078d4",
+      "grid_line": "#444444"
+    },
+    "sizes": {
+      "progress_bar_height": 18,
+      "status_label_height": 12,
+      "quality_info_height": 30,
+      "button_min_width": 60,
+      "header_button_height": 25,
+      "small_button_width": 80,
+      "medium_button_width": 120,
+      "large_button_width": 180,
+      "empty_state_min_height": 80,
+      "empty_state_max_height": 150,
+      "button_height": 15,
+      "button_font_size": 10,
+      "button_border_radius": 4
+    },
+    "button_types": {
+      "primary": {
+        "width": 100,
+        "bg_color": "#0078d4",
+        "hover_color": "#106ebe",
+        "text_color": "#ffffff"
+      },
+      "secondary": {
+        "width": 80,
+        "bg_color": "#7e13e3",
+        "hover_color": "#6201c4",
+        "text_color": "#ffffff"
+      },
+      "export": {
+        "width": 90,
+        "bg_color": "#28a745",
+        "hover_color": "#218838",
+        "text_color": "#ffffff"
+      },
+      "save": {
+        "width": 80,
+        "bg_color": "#1a8408",
+        "hover_color": "#106e1e",
+        "text_color": "#ffffff"
+      },
+      "danger": {
+        "width": 70,
+        "bg_color": "#dc3545",
+        "hover_color": "#c82333",
+        "text_color": "#ffffff"
+      },
+      "info": {
+        "width": 60,
+        "bg_color": "#6c757d",
+        "hover_color": "#5a6268",
+        "text_color": "#ffffff"
+      },
+      "small": {
+        "width": 50,
+        "bg_color": "#6f42c1",
+        "hover_color": "#5a32a3",
+        "text_color": "#ffffff"
+      },
+      "neutral": {
+        "width": 70,
+        "bg_color": "#6c757d",
+        "hover_color": "#545b62",
+        "text_color": "#ffffff"
+      }
+    },
+    "layout": {
+      "main_margins": [5, 5, 5, 5],
+      "main_spacing": 3,
+      "header_spacing": 8,
+      "content_spacing": 5
+    },
+    "analysis_widget_sizes": {
+      "price_series": {
+        "min_height": 600,
+        "preferred_height": 650,
+        "min_width": 800,
+        "preferred_width": 900
+      },
+      "return_risk_analysis": {
+        "min_height": 800,
+        "preferred_height": 850,
+        "min_width": 700,
+        "preferred_width": 800
+      },
+      "correlation_matrix": {
+        "min_height": 600,
+        "preferred_height": 650,
+        "min_width": 600,
+        "preferred_width": 700
+      },
+      "efficient_frontier": {
+        "min_height": 600,
+        "preferred_height": 700,
+        "min_width": 800,
+        "preferred_width": 900
+      },
+      "capital_market_line": {
+        "min_height": 500,
+        "preferred_height": 600,
+        "min_width": 700,
+        "preferred_width": 800
+      },
+      "security_market_line": {
+        "min_height": 500,
+        "preferred_height": 600,
+        "min_width": 700,
+        "preferred_width": 800
+      }
+    },
+    "default_analysis_size": {
+      "min_height": 400,
+      "preferred_height": 500,
+      "min_width": 600,
+      "preferred_width": 700
+    }
+  },
+  "market": {
+    "portfolios": {
+      "Nikkei 225 (^N225)": {
+        "ticker": "^N225",
+        "name": "Nikkei 225",
+        "country": "Japan",
+        "currency": "JPY",
+        "description": "日経平均株価"
+      },
+      "NASDAQ Composite (^IXIC)": {
+        "ticker": "^IXIC",
+        "name": "NASDAQ Composite",
+        "country": "United States",
+        "currency": "USD",
+        "description": "NASDAQ総合指数"
+      },
+      "S&P 500 (^GSPC)": {
+        "ticker": "^GSPC",
+        "name": "S&P 500",
+        "country": "United States",
+        "currency": "USD",
+        "description": "S&P500指数"
+      },
+      "Dow Jones Industrial Average (^DJI)": {
+        "ticker": "^DJI",
+        "name": "Dow Jones Industrial Average",
+        "country": "United States",
+        "currency": "USD",
+        "description": "ダウ工業株30種"
+      }
+    }
+  },
+  "data": {
+    "cache_enabled": true,
+    "cache_duration_days": 1
+  }
+}
